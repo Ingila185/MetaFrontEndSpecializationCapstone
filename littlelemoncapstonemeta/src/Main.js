@@ -1,4 +1,4 @@
-import BookTable from './BookTable';
+import BookTable from './BookPage';
 import {  Flex } from '@chakra-ui/react';
 
 
@@ -7,11 +7,9 @@ function Main ()
     return (
 
 
-        <Flex flex = "1" flexDirection='column' >
-        <main>
+        <main >
             <BookTable />
         </main>
-        </Flex>
     ) 
 }
 

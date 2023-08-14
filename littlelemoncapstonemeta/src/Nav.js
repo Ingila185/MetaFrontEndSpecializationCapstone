@@ -3,10 +3,10 @@ import {Container, Image, Divider, Stack, Link, Flex } from '@chakra-ui/react'
 function Navbar()
 {
     return (
-<Flex bg = "#8C9894"  flexDirection={'column'} justifyContent='space-evenly'>
+<Flex bg = "#8C9894"  flexDirection={'column'} justifyContent='space-evenly' >
 
     <Stack direction="row" spacing={20}> 
-    <Flex maxHeight='10%' maxWidth='10%'  >
+    <Flex alignItems='flex-end' maxHeight='10%' maxWidth='10%'  >
     <Image src = "header.png"  />
     </Flex>
 

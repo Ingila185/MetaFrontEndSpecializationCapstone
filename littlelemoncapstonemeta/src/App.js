@@ -13,7 +13,7 @@ function App() {
     <div className =  "bodyClass">
     <VStack>
   <Header />
-  <Navbar />
+  {/*<Navbar />*/}
   <Main />
   </VStack> 
   </div>
