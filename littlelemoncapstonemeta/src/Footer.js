@@ -3,7 +3,7 @@
 import { ReactNode } from 'react'
 
 import {
-  Box,
+  Box, Image,
   Container,
   SimpleGrid,
   Stack,
@@ -24,7 +24,7 @@ export default function LargeWithLogoLeft() {
           spacing={8}>
           <Stack spacing={6}>
             <Box>
-
+          <Image width='20%' src = "footer.png"/>
             </Box>
             <Text fontSize={'sm'}>© 2023 Little Lemon. All rights reserved</Text>
           </Stack>
