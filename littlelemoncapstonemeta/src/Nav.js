@@ -1,8 +1,12 @@
-import {Container, Image, Divider, Stack, Link, Flex } from '@chakra-ui/react'
+import {Container, Image, Divider, Stack,  Flex, HStack } from '@chakra-ui/react'
+import {Route, Routes, Link} from 'react-router-dom';
+import BookPage from './BookPage';
 
 function Navbar()
 {
     return (
+
+        <div>
 <Flex bg = "#8C9894"  flexDirection={'column'} justifyContent='space-evenly' >
 
     <Stack direction="row" spacing={20}> 
@@ -10,17 +14,28 @@ function Navbar()
     <Image src = "header.png"  />
     </Flex>
 
-    <Link width = "auto"  href = "#">Home</Link>
-    <Link width = "auto"  href = "#">About</Link>
-    <Link width = "auto"  href = "#">Menu</Link>
-    <Link width = "auto"  href = "#">Reservations</Link>
-    <Link width = "auto"  href = "#">Order</Link>
-    <Link width = "auto"  href = "#">Login</Link>
-     
+        <nav>
+            <HStack spacing={20}>
+    <Link   to = "/">Home</Link>   
+    <Link  to = "/">About</Link>
+    <Link  to = "/">Menu</Link>
+    <Link   to = "/book">Reservations</Link>
+    <Link   to = "/">Order Online</Link>
+    <Link   to = "/">Login</Link>
+    </HStack>
+    </nav>
     </Stack>
-
+   
    <Divider></Divider>
+
+ 
     </Flex>
+
+<Routes>
+<Route  path = "/book" element= {<BookPage />} />
+</Routes>
+
+</div>
    
    
    )

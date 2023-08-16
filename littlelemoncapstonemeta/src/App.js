@@ -5,7 +5,6 @@ import Main from './Main';
 import Footer from './Footer';
 import { VStack, Flex } from '@chakra-ui/react';
 
-
 function App() {
   return (
 

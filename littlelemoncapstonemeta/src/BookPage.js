@@ -1,8 +1,11 @@
+import { Container } from "@chakra-ui/react";
 import BookForm from "./BookForm";
 function BookPage ()
 {
     return (
-        <BookForm />
+      <Container>  
+      <BookForm />
+      </Container>
     )
 }
 
